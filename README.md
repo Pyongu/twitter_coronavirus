@@ -242,3 +242,8 @@ There's two reasons:
     In general, writing test cases for large data analysis tasks is tricky and rarely done.
     Writing correct code without test cases is hard,
     and so many (most?) analysis of large datasets contain lots of bugs.
+
+<img src=src/korean_lang.png>
+<img src=src/korean_country.png>
+<img src=src/corona_language.png>
+<img src=src/corona_country.png>
