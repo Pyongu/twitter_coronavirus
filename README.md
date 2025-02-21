@@ -243,7 +243,7 @@ There's two reasons:
     Writing correct code without test cases is hard,
     and so many (most?) analysis of large datasets contain lots of bugs.
 
-<img src=src/korean_lang.png>
+<img src=src/korean_language.png>
 <img src=src/korean_country.png>
 <img src=src/corona_language.png>
 <img src=src/corona_country.png>
