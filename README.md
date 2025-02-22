@@ -247,3 +247,4 @@ There's two reasons:
 <img src=src/korean_country.png>
 <img src=src/corona_language.png>
 <img src=src/corona_country.png>
+<img src=src/alt_reduce.png>
