@@ -15,6 +15,7 @@ import json
 from collections import Counter,defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib import rc, font_manager
 
 # open the input path
 with open(args.input_path) as f:
@@ -27,21 +28,22 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-top10Items = items[10::-1]
-print(top10Items)
+top10Items = items[0:10]
+revTop10Items = top10Items[::-1]
 top10CL = []
 top10Num = []
 for i in range(len(top10Items)):
-    kvTuple = items[i]
+    kvTuple = revTop10Items[i]
     k = kvTuple[0]
     v = kvTuple[1]
     top10CL.append(k)
     top10Num.append(v)
-print(top10CL)
-print(top10Num)
 
 # making bar plot
+rc('font', family='unBatang')
 plt.bar(top10CL, top10Num, color = 'green')
 plt.title(f'Top 10 Values for { args.key}')
 plt.xlabel(f'{args.input_path}')
+plt.ylabel('Count')
+plt.subplots_adjust(left=0.15)
 plt.savefig(args.output_path)
